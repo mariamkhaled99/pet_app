@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-web: gunicorn pet_api.wsgi 
-=======
 web:gunicorn pet_api.wsgi 
->>>>>>> 8b564a281cc77aa99d7088d20569eb9ecef483b9
