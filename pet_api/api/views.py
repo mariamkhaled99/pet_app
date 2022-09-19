@@ -21,6 +21,13 @@ def get_data_location(request,pk):
     location=Location.objects.get(id=pk)
     serializer=LocationSerializer(location,many=False)
     return Response(serializer.data)
+# delete location
+# --------------------------------------------------------------
+@api_view(['DELETE'])
+def delete_location(request,pk):
+    location=Location.objects.get(id=pk)
+    location.delete()
+    return Response('location was deleted !')
 # create location
 # --------------------------------------------------------------
 @api_view(['POST'])
@@ -58,6 +65,13 @@ def get_data_Category(request,pk=id):
     Category=Category.objects.get(id=pk)
     serializer=CategorySerializer(Category,many=False)
     return Response(serializer.data)
+# delete category
+# -----------------------------------------------------------------
+@api_view(['DELETE'])
+def delete_Category(request,pk=id):
+    Category=Category.objects.get(id=pk)
+    Category.delete()
+    return Response('category was deleted !')
 # create category
 # -----------------------------------------------------------------
 @api_view(['POST'])
@@ -94,6 +108,13 @@ def get_data_breed(request,pk):
     breed=Breed.objects.get(id=pk)
     serializer=BreedSerializer(breed,many=False)
     return Response(serializer.data)
+# delete breed
+# ------------------------------------------------------------------
+@api_view(['DELETE'])
+def delete_breed(request,pk):
+    breed=Breed.objects.get(id=pk)
+    breed.delete()
+    return Response('breed was deleted !')
 # create breed
 # ------------------------------------------------------------------
 @api_view(['POST'])
@@ -132,6 +153,14 @@ def get_data_post(request,pk):
     post=Post.objects.get(id=pk)
     serializer=PostSerializer(post,many=False)
     return Response(serializer.data)
+# delete post
+# ------------------------------------------------------------------
+@api_view(['Delete'])
+def delete_post(request,pk):
+    post=Post.objects.get(id=pk)
+    post.delete()
+    return Response('post was deleted !')
+
 
 # create post
 # ------------------------------------------------------------------
