@@ -7,10 +7,12 @@ conda==4.10.3
 conda-package-handling @ file:///tmp/build/80754af9/conda-package-handling_1618262147379/work
 cryptography @ file:///tmp/build/80754af9/cryptography_1616767007030/work
 distlib==0.3.4
+dj-database-url==1.0.0
 Django==4.1
 django-contrib-comments==2.2.0
 django-cors-headers==3.13.0
 django-liststyle==0.1
+django-on-heroku==1.1.2
 django-taggit==3.0.0
 django-threadedcomments==2.0
 djangorestframework==3.13.1
@@ -21,6 +23,7 @@ material==0.1
 Pillow==9.2.0
 pipenv==2022.1.8
 platformdirs==2.5.1
+psycopg2-binary==2.9.3
 pycosat==0.6.3
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
